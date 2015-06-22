@@ -38,10 +38,12 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     public void startService(View view) {
-        startService(new Intent(getBaseContext(), MyService.class));
+        //startService(new Intent(getBaseContext(), MyService.class));
+        startService(new Intent(this, MyService.class));
     }
     // Method to stop the service
     public void stopService(View view) {
-        stopService(new Intent(getBaseContext(), MyService.class));
+        //stopService(new Intent(getBaseContext(), MyService.class));
+        stopService(new Intent(this, MyService.class));
     }
 }
